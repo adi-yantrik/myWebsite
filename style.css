@@ -1,0 +1,702 @@
+
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid rgb(0, 213, 255); /* Change color as desired */
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    font-size: 24px;
+    font-family: monospace;
+  }
+  
+.blinking-text {
+    animation: blink 1.5s infinite;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .hero-section{
+      margin-top: 46px !important;
+      background-image: url(https://cdn.wallpapersafari.com/94/60/wFZ1vf.jpg);
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+  }
+  .hero-section-main{
+      background-color: rgba(22, 22, 22, 0.7);
+      display: flex;
+      justify-content: center;    
+  }
+  .hero-section-into-text{
+      padding: 40px ;
+      width: 90%;;
+      margin-bottom: 30px;
+      border:2px solid white !important;
+      border-radius:30px !important;    
+  }
+  .hero-section-into-text h1{
+      font-size: 60px !important;
+      letter-spacing: 2px;
+      font-weight: 800;
+      font-family: monospace;
+  }
+  .hero-section-into-text p{
+      width: 40%;
+      letter-spacing: 1px;
+  }
+  .section-text-header{
+      margin: 80px 0px!important;
+      border-left:6px solid rgb(44, 192, 24);
+      padding-left:50px !important;   
+      text-transform: uppercase;
+      font-weight: 600;    
+  }
+  .jungle-left-side{
+      width:600px;
+      height: 700px;
+      margin-right: 20px;
+  }
+  .jungle-left-side img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover
+  }
+  .jungle-right-side{
+      width:400px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 10px;    
+  }
+  .icons{
+      font-size: 16px; 
+      padding: 3px;
+  }
+  .jungle-right-side-1{    
+      width:400px;
+      height:340px;
+  }
+  .jungle-right-side-1 img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow:hidden;
+  }
+  .jungle-right-side-2{
+      height:337px;
+      width:400px;
+      margin-top: 8px;
+      overflow:hidden ;
+  }
+  .jungle-right-side-2 img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow:hidden ;
+  }
+  .contact{
+      padding: 40px 0px;
+      width:60%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;    
+  }
+  .jungles{
+      width: 90%;
+      margin: auto;
+      overflow-x: hidden;
+  }
+  .jungle-list{
+      width:80% !important;
+      margin:auto;
+      overflow:hidden ;   
+  }
+  .new-arrived-jungles{
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:30px;
+      grid-row-gap: 60px;
+      width:80%;
+      margin: auto;
+      overflow:hidden ;
+  }
+  .new-jungle {
+      height: 445px;
+      color:rgb(128, 128, 128);
+  }
+  .location{
+      color:black;
+      font-weight: 600;
+      margin-top: 8px;
+  }
+  .new-arrived-image{
+      width:300px !important;
+      height:300px !important;
+      overflow:hidden ;
+  }
+  .new-arrived-image img{
+      width:100% !important;
+      height: 100% !important;
+      object-fit: cover;
+  }
+  .feedback{
+     width:70%;
+     margin: auto;
+  }
+  .name{
+      font-weight: 600;
+      font-size: 14px;
+  }
+  .card{
+      width:380px;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 15px;
+      background-color: white;
+      height: 100px;
+      box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+      -webkit-box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+      -moz-box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+  }
+  .hikes-images{
+      width:50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+  .recent-hikes-header{
+      display:flex;
+      align-items: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+  }
+  .hikes-images img{
+      width:100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  
+  /*medium screens - Laptops*/
+  
+  @media screen and (max-width: 1024px) {
+      .hero-section{
+          background-image: url(https://i.pinimg.com/originals/8e/61/ff/8e61ff28302b6fef1057d1b5afb52d3f.png);
+          background-repeat: no-repeat;
+      }
+      .jungles{
+          width: 90% !important;
+      }
+      .feedback{
+          width:90%;
+          margin: auto;    
+      }
+      .contact{
+          width:90% !important;            
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+      .new-arrived-jungles{
+          width:80% !important;
+      }
+      .feedback{
+          width:70%;
+          margin: auto;    
+      }
+      .jungles{
+          width: 70%;
+          margin: auto;
+      }
+      .jungle-list{
+         display: flex;
+         justify-content: space-between;
+      }
+      .hero-section-main{
+          display: flex;
+          justify-content: center;
+          height: 600px;
+      }
+     .hero-section{
+      background-image: url(./img/bgimage.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+      height: 600px;
+      }
+      .contact{
+          width:70%;
+      }
+      .hero-qoute{
+          font-size: 30px !important;
+          font-family:Verdana;
+      }  
+  }
+  
+  /*Small screens - tablets*/
+  @media screen and (min-width:481px) and (max-width: 768px) {
+      .feedback{
+          width:90%;
+          margin: auto    
+      }
+      .recent-hikes{
+          justify-content: center !important;
+      }
+      .jungles{
+          width: 90% !important;
+          margin: auto !important;
+      }
+      .new-arrived-image{
+          width:250px !important;
+          height:300px !important;
+      }
+      .new-arrived-image img{
+          width:100%!important;
+          height: 100% !important;
+          object-fit: cover;
+      }
+      
+      .hero-section{
+          margin-top: 50px;
+          background-image: url(https://c4.wallpaperflare.com/wallpaper/328/810/463/digital-digital-art-artwork-illustration-simple-hd-wallpaper-preview.jpg);
+          background-repeat: no-repeat;
+      }
+      .hero-section-main{
+          background-color: rgba(22, 22, 22, 0.7);
+          display: flex;
+          justify-content: center;
+          height: 400px;
+      }
+      .hero-section-into-text h1{
+          font-size: 25px !important;
+          letter-spacing: 2px;
+          font-weight: 800;
+          font-family: sans-serif;
+      }
+      .hero-section-into-text p{
+          width: 100%;
+          letter-spacing: 1px;
+          font-size: 11px ;
+          margin-top: 30px;
+      }
+     .jungles{
+         width: 80% !important;
+         margin: auto;
+     }
+      .jungle-left-side{
+          width:500px !important;
+          height: 540px;
+          margin: auto !important;
+      }
+      .jungle-left-side img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+      .jungle-right-side{
+          width:500px ;
+           display: grid;
+           grid-template-rows: 1fr 1fr;
+           grid-row-gap: 10px;
+      }
+      .jungle-right-side-1{
+      width:500px !important;
+      height:540px !important;
+      margin: 30px auto
+      }
+      .jungle-right-side-1 img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow:hidden;
+      }
+      .jungle-right-side-2{
+          height:540px !important;
+          width:500px !important;
+      }
+      .jungle-right-side-2 img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow:hidden ;
+      }
+      .contact{
+          margin-top: 50px !important;
+          width:85% !important;
+          justify-content: space-between;
+      }
+  
+      .contact-head{
+      font-size:20px;
+      }
+      .contact h4{
+      font-size:15px ;
+      }
+      .contact p{
+      font-size: 10px; 
+      }
+      .contact h2{
+      font-size: 16px;
+      }
+  
+  }
+  
+  
+  /*Extra small screens - phones*/
+  @media screen and (max-width: 480px) {
+      .hero-section-main{
+          background-color: rgba(22, 22, 22, 0.7);
+          display: flex;
+          justify-content: center;
+          height: 400px;
+      }
+      .hero-section{
+          margin-top: 50px;
+          background-image: url(https://c4.wallpaperflare.com/wallpaper/328/810/463/digital-digital-art-artwork-illustration-simple-hd-wallpaper-preview.jpg)!important;
+          background-repeat: no-repeat;
+          overflow-x: hidden;
+          overflow-y: scroll;    
+      }
+      .hero-section-into-text h1{
+          font-size: 25px !important;
+          letter-spacing: 2px;
+          font-weight: 800;
+          font-family: sans-serif;
+      }
+      .hero-section-into-text p{
+          width: 100%;
+          letter-spacing: 1px;
+          font-size: 11px ;
+          margin-top: 30px;
+      }
+      .jungles{
+          width:90%;
+          overflow-x: hidden;
+      }
+      .section{
+          height: 2000px !important;
+      }
+      .jungle-list{
+          display: flex !important;
+          flex-direction: column;
+      }
+      .jungle-left-side{
+          width:300px !important; 
+          height: 350px !important;
+          margin-top: 40px;
+          overflow:hidden ;
+      }
+      .jungle-left-side img{
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+      }
+      .jungle-right-side{
+          display: flex;
+          flex-direction: column;
+      }
+      .jungle-right-side-1{
+          width:300px !important;
+          height:350px !important;
+          margin-top: 40px !important;
+      }
+      .jungle-right-side-1 img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow:hidden;
+      }
+      .jungle-right-side-2{
+          height:350px !important;
+          width:300px !important;
+          margin-top: 40px !important; 
+      }
+      .jungle-right-side-2 img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow:hidden ;
+      }
+      .section-text-header{
+          width: 300px !important;
+          margin: 40px 0px!important;
+          border-left:6px solid white;
+          font-size: 20px !important;
+          padding-left:30px !important;   
+          text-transform: uppercase;
+          font-weight: 600;    
+      }
+  
+      .new-jungle{
+          border-bottom:1px solid gray;
+          padding-bottom: 50px;
+          height: 420px;    
+      }
+      .new-arrived-image{
+          width:230px !important;
+          height:240px !important;
+      }
+      .new-arrived-image img{
+          width:100% !important;
+          height: 100% !important;
+          object-fit: cover;
+      }
+      .feedback{
+          width:90%;
+          margin: auto;
+      }
+      .recent-hikes{
+          justify-content: center !important;
+      }
+      .contact-info{
+          width:300px;
+          border:1px solid whitesmoke;
+          padding: 30px 15px;
+          border-radius: 10px;
+      }
+      .contact{
+          width:80%;
+                  
+      }
+      .contact-head{
+          font-size:20px;
+      }
+      .contact h4{
+          font-size:15px ;
+      }
+      .contact p{
+          font-size: 10px;
+      }
+      .contact h2{
+          font-size: 16px;
+      }
+  
+  }
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+header{display:block}summary{display:list-item}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+
+.w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
+.w3-bar{width:100%;overflow:hidden}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-padding-large{padding:12px 24px!important}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+.w3-right{float:right!important}
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
+.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+@media (min-width:993px){.w3-col.l1{width:8.33333%}.w3-col.l2{width:16.66666%}.w3-col.l3{width:24.99999%}.w3-col.l4{width:33.33333%}
+.w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
+.w3-col.l9{width:74.99999%}.w3-col.l10{width:83.33333%}.w3-col.l11{width:91.66666%}.w3-col.l12{width:99.99999%}}
+.w3-rest{overflow:hidden}.w3-stretch{margin-left:-16px;margin-right:-16px}
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
+.w3-cell-row{display:table;width:100%}.w3-cell{display:table-cell}
+.w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
+.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
+
+.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+
+.w3-container{padding:0.01em 16px}
+
+.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-center{text-align:center!important}
+.w3-left-align{text-align:left!important}
+.w3-round,.w3-round-medium{border-radius:4px}
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+@keyframes blink {
+0%, 100% {
+  opacity: 1;
+}
+50% {
+  opacity: 0;
+}
+}
+.w3-flex{
+    display: flex;
+}
+
+.moving-text {
+    font-size: 24px;
+    position: absolute;
+    animation: moveLinear 6s linear infinite;
+    white-space: nowrap;
+  }
+  .moving-text:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+  .moving-text-sml {
+    font-size: 24px;
+    position: absolute;
+    animation: moveLinear 15s linear infinite;
+    white-space: nowrap;
+  }
+  .moving-text-sml:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+  @keyframes moveLinear {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /*for about page*/
+  
+@import "neat";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+
+.align-left {
+	float: left;
+	margin-right: 20px;
+}
+
+.align-right {
+	float: right;
+	margin-left: 20px;
+}
+
+.slide-in {
+	opacity: 0;
+	transition: all .5s;
+}
+
+.align-left.slide-in {
+	transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+	transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+	opacity: 1;
+	transform: translateX(0%) scale(1);
+}
+
+.sudip-photo{
+    width: 400px;
+    height: 400px;
+}
+
+.sudip-pot{
+    width: 200px;
+    height: 250px;
+}
+
+
+
+
+/*gallery*/
+.new-gallery{
+    width:1500px;
+    display: flex;
+    overflow-x: scroll;
+}
+.new-gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.new-gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.new-gallery::-webkit-scrollbar{
+    display: none;
+}
+.new-gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.new-gallery div img:hover{
+  filter: grayscale(0); 
+  cursor: pointer;
+  transform: scale(1.1); 
+}
+
+
+/*projects*/
+.gal-img{
+    height: 400;
+    width: 400;
+}
+
+
+.new-gallery-md{
+    width:1500px;
+    display: flex;
+    overflow-x: scroll;
+}
+.new-gallery-md div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.new-gallery-md div img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.new-gallery-md::-webkit-scrollbar{
+    display: none;
+}
+.new-gallery-wrap-md{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+
+}

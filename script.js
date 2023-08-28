@@ -120,7 +120,10 @@ backBtn.addEventListener('click', ()=>{
   scrollContainer.scrollLeft -= 1280;
 })
 
-
+window.addEventListener("load", function() {
+  const spinner = document.getElementById("loadingSpinner");
+  spinner.style.display = "none"; // Hide the spinner once everything is loaded
+});
 //projects
 
 
